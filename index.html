@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Corral — Never lose another job to a missed call | DFW HVAC &amp; Plumbing</title>
+<meta name="description" content="A free, done-for-you website plus instant missed-call text-back for Dallas–Fort Worth HVAC and plumbing contractors. $0 down. Month to month.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Zilla+Slab:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c1612;
+  --muted:#5c534a;
+  --brand:#9a3412;
+  --brand2:#7c2d12;
+  --bg:#f7f1e8;
+  --card:#fffdf8;
+  --line:#e6ddd0;
+  --ok:#3f6212;
+  --brass:#c4a574;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.55;background:#fff}
+a{color:var(--brand2)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(247,241,232,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:34px;width:auto;display:block}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:10px;border:0;cursor:pointer;font-size:16px;font-family:inherit}
+.btn:hover{background:var(--brand2)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.hero{background:linear-gradient(180deg,var(--bg),#fff);padding:72px 0 56px}
+.hero h1,.hero-font,h2{font-family:"Zilla Slab",Georgia,serif;font-weight:700}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.08;margin:0 0 18px;letter-spacing:-.6px}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:720px}
+.pill{display:inline-block;background:#f3e6d4;color:var(--brand2);font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.small{font-size:14px;color:var(--muted)}
+section{padding:64px 0}
+h2{font-size:clamp(26px,3.5vw,36px);letter-spacing:-.3px;margin:0 0 12px}
+.sub{color:var(--muted);max-width:720px;margin:0 0 32px}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin:0 0 6px;font-size:19px;font-family:"Zilla Slab",Georgia,serif}
+.stat{font-size:40px;font-weight:800;color:var(--brand);letter-spacing:-1px;font-family:"Zilla Slab",Georgia,serif}
+.sms{max-width:360px;background:#f3eee6;border-radius:22px;padding:18px;margin-top:8px}
+.b{padding:10px 14px;border-radius:16px;margin:8px 0;max-width:85%;font-size:15px}
+.in{background:#e8e0d4}
+.out{background:var(--brand);color:#fff;margin-left:auto}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:780px){.calc{grid-template-columns:1fr}}
+label{display:block;font-weight:600;margin:14px 0 6px}
+input,select{width:100%;padding:12px;border:1px solid #d4cbbd;border-radius:10px;font-size:16px;font-family:inherit;background:#fff}
+input[type=range]{padding:0}
+.val{float:right;color:var(--brand2);font-weight:700}
+.result{background:var(--ink);color:#fff;border-radius:16px;padding:28px}
+.result .big{font-size:46px;font-weight:800;color:#e8c48a;letter-spacing:-1px;font-family:"Zilla Slab",Georgia,serif}
+.price{position:relative}
+.price .amt{font-size:42px;font-weight:800;font-family:"Zilla Slab",Georgia,serif}
+.price .amt small{font-size:16px;color:var(--muted);font-weight:600}
+.price ul{padding-left:18px;margin:14px 0 20px}
+.price li{margin:6px 0}
+.featured{border:2px solid var(--brand);box-shadow:0 10px 30px rgba(154,52,18,.15)}
+.tag{position:absolute;top:-12px;right:18px;background:var(--brand);color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px}
+.alt{background:var(--bg)}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{font-weight:700;cursor:pointer}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){form .row{grid-template-columns:1fr}}
+.ok{display:none;background:#ecf4e0;color:#14532d;padding:16px;border-radius:12px;margin-top:14px;font-weight:600}
+.mail-fallback{margin-top:12px;font-size:14px;color:var(--muted)}
+footer{padding:34px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted);background:var(--bg)}
+footer .addr{color:var(--ink);font-weight:600;margin-bottom:8px}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="./"><img src="logo.svg" alt="Job Corral"></a><a class="btn" href="#start">Get my free site</a></div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="pill">For Dallas–Fort Worth HVAC &amp; plumbing contractors</div>
+  <h1>You're on a roof or under a sink.<br>The phone rings. <span style="color:var(--brand)">That job just went to the next guy.</span></h1>
+  <p class="lead">Job Corral texts every missed caller back in seconds, keeps the conversation going and hands you a ready-to-book job. We also build you a fast, professional website for free. You never touch a setting.</p>
+  <div class="cta-row"><a class="btn" href="#calc">See what missed calls cost you</a><a class="btn ghost" href="#pricing">Pricing</a></div>
+  <p class="small" style="margin-top:14px">$0 down · month to month · 14-day free trial · founding price for the first 10 DFW shops</p>
+</div></div>
+
+<section><div class="wrap">
+  <h2>Most small shops miss more calls than they think</h2>
+  <p class="sub">And most callers don't leave a voicemail. They just call the next company on Google.</p>
+  <div class="grid g3">
+    <div class="card"><div class="stat">62%</div><p>of calls to the small businesses studied went unanswered over 30 days. <a href="https://411locals.us/small-business-owners-dont-answer-62-of-phone-calls/" target="_blank" rel="noopener">411 Locals study, 85 businesses</a></p></div>
+    <div class="card"><div class="stat">5 min</div><p>Follow up while the caller still needs you. A reply in seconds beats a callback hours later, and the text goes out automatically.</p></div>
+    <div class="card"><div class="stat">$0</div><p>to get started. We build your site and set up text-back for you, and you're only billed if you keep it after the trial.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="sub">Keep your current number. No new app to learn.</p>
+  <div class="grid g3">
+    <div class="card"><h3>1. A call gets missed</h3><p>You're on a job, after hours, or on another call.</p></div>
+    <div class="card"><h3>2. We text them back instantly</h3><p>A friendly text in your company's name asks what they need, gets the address and urgency, and sends you photos.</p></div>
+    <div class="card"><h3>3. You get a ready-to-book lead</h3><p>You get a text summary ("No cooling, 2-story, Plano, wants today") so you can call back and close it.</p></div>
+  </div>
+  <div class="sms" aria-label="Example text conversation">
+    <div class="b out">Hi, this is Lone Star Air. Sorry we missed your call! Is this about heating or cooling, and is it urgent?</div>
+    <div class="b in">AC stopped blowing cold, upstairs unit</div>
+    <div class="b out">Got it. What's the address and a good time today? A tech will confirm shortly.</div>
+    <div class="b in">4512 Elm Ridge, Plano. Anytime after 2</div>
+  </div>
+  <p class="small">Example conversation for illustration.</p>
+</div></section>
+
+<section id="calc"><div class="wrap">
+  <h2>Missed-revenue calculator</h2>
+  <p class="sub">Plug in your own numbers. It's an estimate, but most owners are surprised.</p>
+  <div class="calc">
+    <div class="card">
+      <label>Calls per week <span class="val" id="v_calls">40</span></label><input type="range" id="calls" min="5" max="200" value="40">
+      <label>% of calls you miss <span class="val" id="v_miss">25%</span></label><input type="range" id="miss" min="5" max="70" value="25">
+      <label>% of missed callers who'd have hired you <span class="val" id="v_close">30%</span></label><input type="range" id="close" min="5" max="70" value="30">
+      <label>Average job value ($) <span class="val" id="v_ticket">$450</span></label><input type="range" id="ticket" min="100" max="5000" step="50" value="450">
+      <label>% of those we help you win back (conservative) <span class="val" id="v_recover">20%</span></label><input type="range" id="recover" min="5" max="50" value="20">
+    </div>
+    <div class="result">
+      <div>Revenue walking out the door each month</div>
+      <div class="big" id="lost">$0</div>
+      <div style="margin-top:18px">Recovered with Job Corral (est.)</div>
+      <div class="big" id="won" style="font-size:36px">$0</div>
+      <p id="roi" style="color:#d6c7b4"></p>
+      <a class="btn" href="#start">Start my free trial</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="pricing" class="alt"><div class="wrap">
+  <h2>Simple pricing. Done for you.</h2>
+  <p class="sub">Founding prices for the first 10 Dallas–Fort Worth shops, locked in for as long as you stay. No setup fees. Cancel anytime.</p>
+  <div class="grid g3">
+    <div class="card price"><h3>Website</h3><div class="amt">$99<small>/mo</small></div>
+      <ul><li>Custom, mobile-fast site built for you</li><li>Hosting, SSL and edits included</li><li>Click-to-call &amp; quote form</li><li>Google Business Profile tune-up</li></ul><a class="btn ghost" href="#start">Get my free site</a></div>
+    <div class="card price featured"><span class="tag">MOST POPULAR</span><h3>Website + Text-Back</h3><div class="amt">$197<small>/mo</small></div>
+      <ul><li>Everything in Website</li><li>Instant missed-call text-back on your number</li><li>Lead qualifying + summary texts to you</li><li>Automatic Google review requests</li><li>Monthly "leads recovered" report</li><li>We test your line every week so it never fails silently</li></ul><a class="btn" href="#start">Start 14-day free trial</a></div>
+    <div class="card price"><h3>Full Front Desk</h3><div class="amt">$297<small>/mo</small></div>
+      <ul><li>Everything in Website + Text-Back</li><li>AI that answers the phone after hours</li><li>Emergency calls routed to your on-call phone</li><li>Website chat that captures leads 24/7</li></ul><a class="btn ghost" href="#start">Talk to us</a></div>
+  </div>
+  <p class="small" style="margin-top:16px">Most agencies charge $1,500+ in setup fees. We don't. Texts only go to people who called you first.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Why owners pick Job Corral</h2>
+  <div class="grid g3">
+    <div class="card"><h3>Done for you</h3><p>No software to configure. Send us your hours and services; we do the rest in 48 hours.</p></div>
+    <div class="card"><h3>Never fails silently</h3><p>A common complaint about agency setups is a text-back that quietly stopped working. We call your line weekly to confirm it still fires.</p></div>
+    <div class="card"><h3>You own it</h3><p>Your number stays yours. Your site content is yours. Leave anytime, no contract.</p></div>
+  </div>
+</div></section>
+
+<section id="start" class="alt"><div class="wrap">
+  <h2>Claim a founding spot</h2>
+  <p class="sub">Tell us about your shop. We'll build a preview of your new site and send it to you, free, with no obligation.</p>
+  <form id="leadform" class="card" action="mailto:hello@jobcorral.com" method="post" enctype="text/plain">
+    <div class="row"><div><label for="name">Your name</label><input id="name" name="name" required></div><div><label for="company">Company</label><input id="company" name="company" required></div></div>
+    <div class="row"><div><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" required></div><div><label for="email">Email</label><input id="email" name="email" type="email"></div></div>
+    <div class="row"><div><label for="trade">Trade</label><select id="trade" name="trade"><option>HVAC</option><option>Plumbing</option><option>HVAC + Plumbing</option><option>Electrical</option><option>Roofing</option><option>Other</option></select></div><div><label for="city">City</label><input id="city" name="city" placeholder="e.g. Plano"></div></div>
+    <label for="website">Current website (if any)</label><input id="website" name="website" placeholder="none is fine">
+    <input type="text" name="hp" id="hp" style="display:none" tabindex="-1" autocomplete="off">
+    <label style="font-weight:400;font-size:14px;display:flex;gap:8px;align-items:flex-start"><input type="checkbox" id="consent" required style="width:auto;margin-top:4px">I agree that Job Corral may contact me about this request by phone, text or email. Msg &amp; data rates may apply. Reply STOP to opt out.</label>
+    <div style="margin-top:18px"><button class="btn" type="submit">Send me my free site preview</button></div>
+    <p class="mail-fallback">Or email <a href="mailto:hello@jobcorral.com">hello@jobcorral.com</a> with your company name, city and trade. This form opens your email app — nothing is stored on this site.</p>
+    <div class="ok" id="ok">Your email app should be open with a message to hello@jobcorral.com. Send it, and we'll reach out within one business day with your free site preview. If nothing opened, email us directly at hello@jobcorral.com.</div>
+  </form>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Questions</h2>
+  <details><summary>Do I need a new phone number?</summary><p>No. We work with your existing business number using carrier-compliant business texting.</p></details>
+  <details><summary>Is texting people legal?</summary><p>Yes, when it's a reply to someone who called you first. We register your business texting with the carriers as required, and every thread honors STOP.</p></details>
+  <details><summary>What if I already have a website?</summary><p>Keep it. Take Text-Back on its own, or let us build a faster one and you choose.</p></details>
+  <details><summary>What happens after the free trial?</summary><p>If you keep it, billing starts at your founding price. If not, cancel and pay nothing.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="addr">Job Corral, 1440 W. Taylor St #2715, Chicago, IL 60607</div>
+  <div>© 2026 Job Corral · Serving Dallas–Fort Worth · <a href="privacy.html">Privacy</a> · Pre-launch: founding offers are limited.</div>
+</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);const fmt=n=>'$'+Math.round(n).toLocaleString();
+function calc(){const c=+$('calls').value,m=+$('miss').value,cl=+$('close').value,t=+$('ticket').value,r=+$('recover').value;
+$('v_calls').textContent=c;$('v_miss').textContent=m+'%';$('v_close').textContent=cl+'%';$('v_ticket').textContent=fmt(t);$('v_recover').textContent=r+'%';
+const lostMo=c*(m/100)*(cl/100)*t*4.33;const won=lostMo*(r/100);$('lost').textContent=fmt(lostMo);$('won').textContent=fmt(won)+'/mo';
+$('roi').textContent=won>197?`That's about ${(won/197).toFixed(1)}× the $197 plan.`:'Even one recovered job a month usually covers the plan.';}
+['calls','miss','close','ticket','recover'].forEach(i=>$(i).addEventListener('input',calc));calc();
+$('leadform').addEventListener('submit',e=>{
+  if($('hp')&&$('hp').value){e.preventDefault();return;}
+  e.preventDefault();
+  const d=Object.fromEntries(new FormData(e.target));
+  const subject='Founding preview request — '+(d.company||'new shop');
+  const body=[
+    'Name: '+(d.name||''),
+    'Company: '+(d.company||''),
+    'Phone: '+(d.phone||''),
+    'Email: '+(d.email||''),
+    'Trade: '+(d.trade||''),
+    'City: '+(d.city||''),
+    'Website: '+(d.website||''),
+    '',
+    'I agree that Job Corral may contact me about this request by phone, text or email.'
+  ].join('\n');
+  const href='mailto:hello@jobcorral.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  window.location.href=href;
+  $('ok').style.display='block';
+});
+</script>
+</body></html>
