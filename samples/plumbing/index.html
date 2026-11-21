@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kiskadee Plumbing Co. (Sample) | A sample design by Job Corral</title>
+<meta name="description" content="A sample plumbing website designed by Job Corral. Kiskadee Plumbing Co. is a fictional Dallas–Fort Worth shop, not a real company.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0F5C61">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10292C;--muted:#4E6A6D;--sand:#F3E9D7;--teal:#0F5C61;--clay:#C46A3A;--pale:#E7F0EF;--line:#D9CBB3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Outfit",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--sand);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:var(--teal)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.ico{width:1.1em;height:1.1em;vertical-align:-.18em;fill:currentColor;flex:none}
+.sample-bar{background:var(--teal);color:#E7F0EF;font-size:13px;text-align:center;padding:8px 14px;font-weight:600}
+.sample-bar a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+header{background:var(--sand);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:12px}
+.logo{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none}
+.mark{width:46px;height:46px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-family:"DM Serif Display",Georgia,serif;font-size:22px;flex:none}
+.logo strong{display:block;font-family:"DM Serif Display",Georgia,serif;font-size:22px;line-height:1.1;font-weight:400}
+.logo small{display:block;font-size:12px;color:var(--muted);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--clay);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:999px;border:0;cursor:pointer;font-size:16px;font-family:inherit}
+.btn:hover{filter:brightness(1.05)}
+.btn.teal{background:var(--teal);color:#fff}
+.btn.ghost{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.nav .btn{padding:10px 18px}
+.nav .lbl{display:none}@media(min-width:560px){.nav .lbl{display:inline}}
+.hero{padding:28px 0 0}
+.hero-grid{display:grid;gap:0;align-items:stretch;background:var(--sand)}
+.hero-photo{min-height:320px;background:#0F5C61 url(img/hero.webp) center/cover no-repeat}
+.hero-copy{padding:36px 8px 48px}
+@media(min-width:860px){
+  .hero-grid{grid-template-columns:1.05fr .95fr;min-height:640px}
+  .hero-copy{padding:64px 8px 64px 48px;display:flex;flex-direction:column;justify-content:center}
+  .wrap.hero-wrap{max-width:none;padding:0}
+  .hero-grid{max-width:1160px;margin:0 auto}
+}
+.vert{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin:0 0 16px}
+.hero h1{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(36px,6vw,58px);line-height:1.08;margin:0 0 16px;font-weight:400;text-wrap:balance}
+.lead{font-size:18px;color:var(--muted);max-width:440px;margin:0 0 28px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+section{padding:72px 0}
+h2{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(28px,4vw,40px);margin:0 0 10px;font-weight:400;line-height:1.15}
+.sub{color:var(--muted);max-width:620px;margin:0 0 32px;font-size:17px}
+.rows{display:flex;flex-direction:column;gap:28px}
+.row{display:grid;gap:0;background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.row img{width:100%;height:220px;object-fit:cover}
+.row .bd{padding:24px 26px}
+@media(min-width:760px){
+  .row{grid-template-columns:280px 1fr;align-items:center}
+  .row:nth-child(even){grid-template-columns:1fr 280px}
+  .row:nth-child(even) img{order:2}
+  .row img{height:100%;min-height:220px}
+}
+.row h3{margin:0 0 8px;font-family:"DM Serif Display",Georgia,serif;font-size:26px;font-weight:400}
+.row p{margin:0;color:var(--muted)}
+.missed{background:var(--pale);padding:80px 0}
+.missed-grid{display:grid;gap:40px;align-items:center}
+@media(min-width:840px){.missed-grid{grid-template-columns:300px 1fr}}
+.phone{width:100%;max-width:280px;margin:0 auto;background:var(--ink);border-radius:36px;padding:16px 14px 18px;box-shadow:0 18px 40px rgba(16,41,44,.28);color:var(--ink)}
+.phone .notch{width:86px;height:5px;border-radius:999px;background:rgba(231,240,239,.3);margin:0 auto 12px}
+.screen{background:#fff;border-radius:24px;padding:14px 12px;display:flex;flex-direction:column;gap:8px;min-height:250px}
+.screen .when{font-size:11px;text-align:center;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.b{max-width:88%;padding:10px 12px;border-radius:18px;font-size:13.5px;line-height:1.4}
+.b.cust{background:var(--sand);align-self:flex-start;border-bottom-left-radius:4px}
+.b.shop{background:#B8D4D4;align-self:flex-end;border-bottom-right-radius:4px}
+.missed ol{margin:12px 0 0;padding:0 0 0 22px}
+.missed li{margin:0 0 12px}
+.about{display:grid;gap:32px;align-items:center}
+@media(min-width:800px){.about{grid-template-columns:1fr 1fr}}
+.about img{width:100%;height:380px;object-fit:cover;border-radius:24px}
+#quote{padding-top:0}
+.formcard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px;max-width:640px}
+label{display:block;font-weight:700;margin:14px 0 6px;font-size:14px}
+label:first-child{margin-top:0}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font-size:16px;font-family:inherit;background:var(--sand);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:3px solid rgba(15,92,97,.25);border-color:var(--teal);background:#fff}
+.row2{display:grid;gap:0 14px}@media(min-width:560px){.row2{grid-template-columns:1fr 1fr}}
+.note{display:none;background:#F6E3C4;color:#5C3B12;padding:14px;border-radius:12px;margin-top:12px;font-weight:600}
+.fine{font-size:14px;color:var(--muted);margin:0 0 12px}
+footer{background:var(--ink);color:#B7C9CB;padding:44px 0 40px;font-size:14px}
+footer .fname{color:#fff;font-family:"DM Serif Display",Georgia,serif;font-size:26px;margin-bottom:6px}
+footer a{color:#E7F0EF}
+footer .disc{margin-top:20px;padding-top:18px;border-top:1px solid #1C3E42;max-width:720px}
+</style>
+</head>
+<body>
+<div class="sample-bar">Sample design by <a href="https://www.jobcorral.com">Job Corral</a> · Kiskadee Plumbing Co. is a fictional shop, not a real company.</div>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="mark">K</span><span><strong>Kiskadee Plumbing Co.</strong><small>Sample · Fort Worth, TX</small></span></a>
+    <a class="btn teal" href="tel:+18175550168"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> <span class="lbl">817-555-0168</span></a>
+  </div>
+</header>
+<main id="top">
+  <div class="hero"><div class="hero-wrap wrap">
+    <div class="hero-grid">
+      <div class="hero-photo" role="img" aria-label="Plumbing work inside a home"></div>
+      <div class="hero-copy">
+        <p class="vert">Plumbing · Fort Worth</p>
+        <h1>A plumber you can reach when the water won’t wait.</h1>
+        <p class="lead">Leaks, sewer lines, water heaters and new plumbing for homes in Fort Worth and across Dallas–Fort Worth. One tap to call, or send a note and we’ll call you back.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+18175550168"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Call 817-555-0168</a>
+          <a class="btn ghost" href="#quote">Request a quote</a>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+  <section id="services"><div class="wrap">
+    <h2>Plumbing, written clearly</h2>
+    <p class="sub">Each service gets its own space, so a homeowner with water on the floor doesn’t have to hunt.</p>
+    <div class="rows">
+      <div class="row"><img src="img/water.webp" alt="Copper water lines in a residential wall" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>Water lines</h3><p>Leaks, repipes and pressure problems, explained in plain language, with a tap-to-call button on every page.</p></div></div>
+      <div class="row"><img src="img/sewer.webp" alt="Sewer line work at a home" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>Sewer and drains</h3><p>Clogs, camera inspections and sewer line repair — the calls that usually can’t wait until morning.</p></div></div>
+      <div class="row"><img src="img/gas.webp" alt="Gas line piping along a home exterior" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>Gas lines</h3><p>Appliance hookups and gas line work, done carefully and clearly quoted before anything starts.</p></div></div>
+      <div class="row"><img src="img/new-plumbing.webp" alt="New plumbing rough-in in a bathroom" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>New plumbing</h3><p>Remodels and new construction, with a simple form so the office isn’t the only way in.</p></div></div>
+    </div>
+  </div></section>
+
+  <section class="missed" id="textback"><div class="wrap">
+    <div class="missed-grid">
+      <div class="phone" aria-label="Sample missed-call text conversation">
+        <div class="notch"></div>
+        <div class="screen">
+          <div class="when">Sample text</div>
+          <div class="b cust">There’s water on the kitchen floor. I just called and got voicemail.</div>
+          <div class="b shop">Hi, this is Kiskadee Plumbing. Sorry we missed your call. Is the water still running, and can you shut off the valve under the sink?</div>
+          <div class="b cust">Valve’s off. It’s still wet under the cabinet.</div>
+        </div>
+      </div>
+      <div>
+        <h2>A missed call can still become a job.</h2>
+        <p class="sub">Most people who hit voicemail don’t leave a message. They call the next plumber. On a live Job Corral setup, every missed call gets an instant text from the shop, and the shop gets the details to call back.</p>
+        <ol>
+          <li>A homeowner calls while the plumber is under a house or on another job.</li>
+          <li>They get a text from Kiskadee Plumbing: “Sorry we missed you — what’s going on?”</li>
+          <li>The shop replies, then calls back before the customer moves down the list.</li>
+        </ol>
+        <p class="sub" style="margin:18px 0 0">This is a sample conversation, not a live texting line. The number on this page is not in service.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="area"><div class="wrap about">
+    <div>
+      <h2>Built to look like a Fort Worth shop</h2>
+      <p class="sub">This is a sample design. On a real site, this page would use the shop’s real name, phone, license and the cities it actually serves.</p>
+      <p class="fine">Call 817-555-0168 — sample number, not in service.</p>
+      <p class="fine">Licensed and insured (sample — no license number is listed on purpose).</p>
+      <p class="fine">Serving homes across Dallas–Fort Worth, written here as a Fort Worth shop.</p>
+    </div>
+    <img src="img/trust.webp" alt="Technician putting on shoe covers at a home’s front door" width="720" height="540" loading="lazy" decoding="async">
+  </div></section>
+
+  <section id="quote"><div class="wrap">
+    <div class="formcard">
+      <h2>Tell us what’s going on</h2>
+      <p class="sub">This form is a demo and does not send anything. For a live shop, requests would go out by text and email. The sample number is 817-555-0168.</p>
+      <form onsubmit="event.preventDefault();document.getElementById('n').style.display='block'">
+        <div class="row2">
+          <div><label for="nm">Name</label><input id="nm" autocomplete="name"></div>
+          <div><label for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel"></div>
+        </div>
+        <label for="sv">What do you need?</label>
+        <select id="sv"><option>Water leak</option><option>Sewer or drain</option><option>Water heater</option><option>Gas line</option><option>New plumbing</option><option>Something else</option></select>
+        <label for="ms">Details</label>
+        <textarea id="ms" rows="4"></textarea>
+        <p style="margin:18px 0 0"><button class="btn teal" type="submit" style="width:100%">Send request</button></p>
+        <div class="note" id="n">Sample only: nothing was sent. On a live site, this would go to the shop by text and email.</div>
+      </form>
+    </div>
+  </div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fname">Kiskadee Plumbing Co.</div>
+    Plumbing · Fort Worth, TX · 817-555-0168 (sample)
+    <div class="disc"><strong style="color:#fff">Sample design by Job Corral.</strong> Kiskadee Plumbing Co. is a fictional shop, not a real company. Photos are illustrative. The phone number is not in service.</div>
+  </div>
+</footer>
+</body>
+</html>

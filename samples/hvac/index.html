@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inkwood Heating &amp; Air (Sample) | A sample design by Job Corral</title>
+<meta name="description" content="A sample heating and air website designed by Job Corral. Inkwood Heating &amp; Air is a fictional Dallas–Fort Worth shop, not a real company.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#161513">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1A1612;--muted:#5C5348;--cream:#F4EFE6;--copper:#C45C26;--char:#161513;--olive:#3F4F3A;--line:#E4DCD0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Figtree",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:78px}
+img{max-width:100%;display:block}a{color:var(--copper)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.ico{width:1.1em;height:1.1em;vertical-align:-.18em;fill:currentColor;flex:none}
+.sample-bar{background:var(--char);color:#E8DFD2;font-size:13px;text-align:center;padding:8px 14px;font-weight:600;letter-spacing:.01em}
+.sample-bar a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+header{position:sticky;top:0;background:rgba(244,239,230,.94);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:70px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+.mark{width:40px;height:40px;border-radius:4px;background:var(--copper);color:#fff;display:grid;place-items:center;font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:18px;flex:none}
+.logo strong{display:block;font-family:"Newsreader",Georgia,serif;font-size:18px;line-height:1.1;font-weight:600}
+.logo small{display:block;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--copper);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:4px;border:0;cursor:pointer;font-size:16px;font-family:inherit;text-align:center}
+.btn:hover{filter:brightness(1.06)}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7)}
+.btn.solid{background:var(--olive);color:#fff}
+.nav .btn{padding:10px 16px;font-size:15px}
+.nav .lbl{display:none}@media(min-width:560px){.nav .lbl{display:inline}}
+.hero{position:relative;color:#fff;background:var(--char) url(img/hero.webp) 60% center/cover no-repeat;min-height:88vh;min-height:88dvh;display:flex;align-items:flex-end}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,21,19,.15) 0%,rgba(22,21,19,.55) 45%,rgba(22,21,19,.92) 100%)}
+.hero .wrap{position:relative;padding:40px 20px 56px;width:100%}
+.hero-inner{max-width:680px}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#E8DFD2;margin:0 0 14px;border-left:3px solid var(--copper);padding-left:10px}
+.hero h1{font-family:"Newsreader",Georgia,serif;font-size:clamp(40px,8vw,68px);line-height:1.02;margin:0 0 16px;font-weight:600;letter-spacing:-.02em;text-wrap:balance}
+.lead{font-size:clamp(17px,2.2vw,20px);color:#E8DFD2;max-width:540px;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.strip{background:var(--olive);color:#F4EFE6;padding:16px 0;font-weight:600;font-size:15px}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+section{padding:72px 0}
+h2{font-family:"Newsreader",Georgia,serif;font-size:clamp(28px,4vw,42px);margin:0 0 10px;font-weight:600;letter-spacing:-.02em;line-height:1.15}
+.sub{color:var(--muted);max-width:620px;margin:0 0 32px;font-size:17px}
+.grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid.g4{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card .bd{padding:16px 18px 20px}
+.card h3{margin:0 0 6px;font-family:"Newsreader",Georgia,serif;font-size:22px;font-weight:600}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.missed{background:var(--char);color:#F4EFE6;padding:80px 0}
+.missed h2{color:#fff}
+.missed .sub{color:#C8BDAE}
+.missed-grid{display:grid;gap:40px;align-items:center}
+@media(min-width:840px){.missed-grid{grid-template-columns:1fr 300px}}
+.missed ol{margin:0;padding:0 0 0 22px}
+.missed li{margin:0 0 14px}
+.phone{width:100%;max-width:280px;margin:0 auto;background:#0E0D0C;border-radius:32px;padding:16px 14px 18px;box-shadow:0 20px 50px rgba(0,0,0,.45);color:var(--ink)}
+.phone .notch{width:86px;height:5px;border-radius:999px;background:rgba(244,239,230,.25);margin:0 auto 12px}
+.screen{background:var(--cream);border-radius:22px;padding:14px 12px;display:flex;flex-direction:column;gap:8px;min-height:250px}
+.screen .when{font-size:11px;text-align:center;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.b{max-width:88%;padding:10px 12px;border-radius:16px;font-size:13.5px;line-height:1.4}
+.b.cust{background:#fff;align-self:flex-start;border-bottom-left-radius:4px;border:1px solid var(--line)}
+.b.shop{background:#E8C9B5;align-self:flex-end;border-bottom-right-radius:4px}
+.split{display:grid;gap:32px;align-items:center}
+@media(min-width:800px){.split{grid-template-columns:1fr 1fr}}
+.photo img{width:100%;height:360px;object-fit:cover;border-radius:6px}
+.facts{list-style:none;margin:20px 0 0;padding:0}
+.facts li{display:flex;gap:10px;align-items:flex-start;margin:0 0 10px;font-weight:600}
+#quote{background:#fff;border-top:1px solid var(--line)}
+.quote-grid{display:grid;gap:28px}
+@media(min-width:800px){.quote-grid{grid-template-columns:.85fr 1.15fr}}
+.talk{background:var(--olive);color:#F4EFE6;border-radius:6px;padding:32px 28px}
+.talk h3{font-family:"Newsreader",Georgia,serif;font-size:28px;margin:0 0 8px;font-weight:600;color:#fff}
+.talk .big{display:block;font-size:28px;font-weight:800;color:#fff;text-decoration:none;margin:16px 0 18px;letter-spacing:-.03em}
+.talk p{margin:0;color:#D6E0D2}
+.formcard{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:28px}
+label{display:block;font-weight:700;margin:14px 0 6px;font-size:14px}
+label:first-child{margin-top:0}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid #D4CBBE;border-radius:4px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:3px solid rgba(196,92,38,.3);border-color:var(--copper)}
+.row2{display:grid;gap:0 14px}@media(min-width:560px){.row2{grid-template-columns:1fr 1fr}}
+.note{display:none;background:#F6E3C4;color:#5C3B12;padding:14px;border-radius:4px;margin-top:12px;font-weight:600}
+footer{background:var(--char);color:#C8BDAE;padding:40px 0 36px;font-size:14px}
+footer .fname{color:#fff;font-family:"Newsreader",Georgia,serif;font-size:22px;margin-bottom:6px}
+footer a{color:#E8DFD2}
+footer .disc{margin-top:20px;padding-top:18px;border-top:1px solid #2A2724;max-width:720px}
+.callbar{position:fixed;left:0;right:0;bottom:0;background:var(--char);padding:10px 12px;z-index:9;box-shadow:0 -8px 24px rgba(0,0,0,.25)}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:10px;color:#fff;background:var(--copper);border-radius:4px;font-weight:800;font-size:18px;text-decoration:none;padding:12px}
+@media(min-width:900px){.callbar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="sample-bar">Sample design by <a href="https://www.jobcorral.com">Job Corral</a> · Inkwood Heating &amp; Air is a fictional shop, not a real company.</div>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="mark">I</span><span><strong>Inkwood Heating &amp; Air</strong><small>Sample · Plano, TX</small></span></a>
+    <a class="btn" href="tel:+19725550142"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> <span class="lbl">972-555-0142</span></a>
+  </div>
+</header>
+<main id="top">
+  <div class="hero" role="img" aria-label="An HVAC technician working at an outdoor air-conditioning unit">
+    <div class="wrap"><div class="hero-inner">
+      <p class="kicker">Heating &amp; air · Dallas–Fort Worth</p>
+      <h1>Cool in August. Warm in January. A shop you can actually reach.</h1>
+      <p class="lead">AC repair, heating, new systems and tune-ups for homes across North Texas. Tap to call — or tell us what’s going on and we’ll call you back.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+19725550142"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Call 972-555-0142</a>
+        <a class="btn ghost" href="#quote">Request a quote</a>
+      </div>
+    </div></div>
+  </div>
+  <div class="strip"><div class="wrap">
+    <span>Licensed &amp; insured (sample)</span>
+    <span>Residential heating and cooling</span>
+    <span>Serving Dallas–Fort Worth</span>
+  </div></div>
+
+  <section id="services"><div class="wrap">
+    <h2>What we take care of</h2>
+    <p class="sub">Plain-language service pages so a homeowner who’s hot — or cold — can call in one tap.</p>
+    <div class="grid g4">
+      <div class="card"><img src="img/repair.webp" alt="Technician diagnosing an air-conditioning system" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>AC repair</h3><p>Diagnosis and repair when the system stops cooling.</p></div></div>
+      <div class="card"><img src="img/install.webp" alt="Newly installed outdoor AC unit beside a home" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>New systems</h3><p>Installs and replacements, sized for the house.</p></div></div>
+      <div class="card"><img src="img/maintenance.webp" alt="Technician performing seasonal HVAC maintenance" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>Tune-ups</h3><p>Seasonal maintenance to keep the system running.</p></div></div>
+      <div class="card"><img src="img/commercial.webp" alt="Commercial heating and cooling equipment" width="720" height="540" loading="lazy" decoding="async"><div class="bd"><h3>Light commercial</h3><p>Small offices and shops, not just houses.</p></div></div>
+    </div>
+  </div></section>
+
+  <section class="missed" id="textback"><div class="wrap">
+    <div class="missed-grid">
+      <div>
+        <h2>If a call is missed, the caller gets a text.</h2>
+        <p class="sub">On a live Job Corral setup, a missed call doesn’t go to voicemail and die there. The caller gets a text from the shop in seconds, and the shop gets the job details to call back.</p>
+        <ol>
+          <li>A homeowner calls while the tech is on a roof or in an attic.</li>
+          <li>They get a text from Inkwood Heating &amp; Air: “Sorry we missed you — what’s going on?”</li>
+          <li>The shop sees the reply and calls back first, before the next name on Google.</li>
+        </ol>
+        <p class="sub" style="margin:18px 0 0">This is a sample conversation, not a live texting line. The number on this page is not in service.</p>
+      </div>
+      <div class="phone" aria-label="Sample missed-call text conversation">
+        <div class="notch"></div>
+        <div class="screen">
+          <div class="when">Sample text</div>
+          <div class="b cust">Hi, my AC just quit and nobody picked up.</div>
+          <div class="b shop">Hi, this is Inkwood Heating &amp; Air. Sorry we missed your call — is the house getting hot, and is anyone home if we come out?</div>
+          <div class="b cust">Yes, it’s 82 already. We’ll be here.</div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="area"><div class="wrap split">
+    <div class="photo"><img src="img/trust.webp" alt="Technician putting on shoe covers at a home’s front door" width="720" height="540" loading="lazy" decoding="async"></div>
+    <div>
+      <h2>A local shop, easy to reach</h2>
+      <p class="sub">This sample is written as a Plano heating and air company serving homes across Dallas–Fort Worth. On a real site, this section would use the shop’s real city, license and service area.</p>
+      <ul class="facts">
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> <span>972-555-0142 <em style="font-weight:500;color:var(--muted)">(sample number, not in service)</em></span></li>
+        <li><span>Licensed and insured (sample — no license number is listed on purpose)</span></li>
+        <li><span>Heating, air conditioning and tune-ups for homes</span></li>
+      </ul>
+    </div>
+  </div></section>
+
+  <section id="quote"><div class="wrap">
+    <div class="quote-grid">
+      <div class="talk">
+        <h3>Prefer to talk?</h3>
+        <p>For anything urgent, calling is the fastest way. This is a sample number and is not in service.</p>
+        <a class="big" href="tel:+19725550142">972-555-0142</a>
+        <a class="btn" href="tel:+19725550142"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Tap to call</a>
+      </div>
+      <div class="formcard">
+        <h2 style="font-size:30px">Tell us what’s going on</h2>
+        <p class="sub" style="margin-bottom:18px">This form is a demo and does not send anything.</p>
+        <form onsubmit="event.preventDefault();document.getElementById('n').style.display='block'">
+          <div class="row2">
+            <div><label for="nm">Name</label><input id="nm" autocomplete="name"></div>
+            <div><label for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel"></div>
+          </div>
+          <label for="sv">What do you need?</label>
+          <select id="sv"><option>AC repair</option><option>Heating repair</option><option>New system</option><option>Tune-up</option><option>Something else</option></select>
+          <label for="ms">Details</label>
+          <textarea id="ms" rows="4"></textarea>
+          <p style="margin:18px 0 0"><button class="btn" type="submit" style="width:100%">Send request</button></p>
+          <div class="note" id="n">Sample only: nothing was sent. On a live site, this would go to the shop by text and email.</div>
+        </form>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fname">Inkwood Heating &amp; Air</div>
+    Heating &amp; Air Conditioning · Plano, TX · 972-555-0142 (sample)
+    <div class="disc"><strong style="color:#fff">Sample design by Job Corral.</strong> Inkwood Heating &amp; Air is a fictional shop, not a real company. Photos are illustrative. The phone number is not in service.</div>
+  </div>
+</footer>
+<div class="callbar"><a href="tel:+19725550142"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Call 972-555-0142</a></div>
+</body>
+</html>
